@@ -1,7 +1,8 @@
+from django.shortcuts import render
+
 from django.http import HttpResponse
 from django.template import loader
-from django.shortcuts import render
 
 def index(request):
 	context = {}
-	return render(request, 'index.html', context)
+	return render(request, 'Landing/index.html', context)
